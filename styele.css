@@ -1,0 +1,110 @@
+@charset "uft-8";
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(FOTOS/vanishing-stripes.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 
+    1600px;
+}
+
+@font-face{
+font-family: FONT1;
+src: url(FONTES/NEONLEDLight.otf);
+}
+
+@font-face{
+    font-family: FONT2;
+    src: url(FONTES/Gobold\ Bold\ Italic.otf);
+}
+h1{
+    text-align: center;
+    color: #8163f0;
+    font-family: FONT1;
+    font-size: 100PX;
+
+}
+
+/* img{
+    border: 20px; 
+    border-radius: 50px;
+    text-align: center;
+} */
+
+.container{
+    text-align: center;
+}
+
+.container img {
+    border: 10px;
+    border-radius: 30px;
+}
+
+
+h2{
+    text-align: center;color: #8163f0;
+    font-family: FONT2;
+}
+
+a{
+ font-size: 50px;
+ position: absolute;
+ left: 47%;
+ color: black;
+ text-decoration: none;
+ display: inline-block;
+ background: #000;
+ color: aliceblue;
+ border: 50px;
+ border-radius: 10px;
+}
+
+
+
+table{
+    /* fazer um centro */
+}
+table  tr th{
+    font-size: 80px;
+
+
+}
+th{
+    font-family: FONT1;
+    color: rgb(142, 182, 0);
+}
+td{
+    color: rgb(225, 241, 255);
+    font-size: 30PX;
+
+}
+table{
+    margin-left: 480px;
+}
+.galeria{
+    margin: 2em;
+    display: flex;
+    height: 20em;
+    gap: 0.5em;
+}
+
+.galeria div{
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    border-radius: 50px;
+    margin-bottom: 1em;
+    transition:all 0.7s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+    .galeria div:hover{
+        flex: 3;
+    }
+    .galeria:hover div:not(:hover){
+        filter: blur(2px) grayscale(70%);
+
+    }
